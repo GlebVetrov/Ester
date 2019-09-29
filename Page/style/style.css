@@ -1,0 +1,424 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.main-header {
+  width: 100%;
+}
+.main-header .mobile-navigation {
+  display: none;
+}
+.main-header .main-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.main-header .main-navigation .main-header-logo {
+  display: flex;
+  flex-basis: 35%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: 130px;
+  align-items: center;
+  background-color: #ebf3ff;
+}
+.main-header .main-navigation nav {
+  display: flex;
+  flex-basis: 65%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: flex-end;
+}
+.main-header .main-navigation nav ul {
+  list-style-type: none;
+}
+.main-header .main-navigation nav .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .main-navigation nav .site-navigation a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.83;
+  letter-spacing: 0.6px;
+  white-space: nowrap;
+  color: #364459;
+}
+.main-header .main-navigation nav .site-navigation li {
+  display: inline;
+  margin-left: 85px;
+}
+.main-header .main-navigation nav .site-navigation li:first-child {
+  margin-left: 90px;
+}
+.main-header .main-navigation nav .site-navigation li:last-child {
+  margin: 0 90px 0 73px;
+}
+.main-header .main-navigation nav .user-navigation {
+  display: flex;
+}
+.main-header .main-navigation nav .user-navigation button {
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+  border: none;
+  border-left: solid 0.5px #8ca0bf;
+}
+.main-header .main-navigation nav .user-navigation li:last-child button {
+  width: 85px;
+  background-color: #0d3a7f;
+}
+
+main {
+  position: relative;
+  display: flex;
+}
+main .registration {
+  flex-basis: 35%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 95px 16px 0 130px;
+  background-color: #0d3a7f;
+  font-weight: 300;
+  color: #ffffff;
+}
+main .registration h1 {
+  margin-bottom: 15px;
+  font-size: 48px;
+  font-weight: inherit;
+}
+main .registration h1 span {
+  background-image: linear-gradient(to right, rgba(22, 194, 184, 0.4), rgba(22, 194, 184, 0));
+}
+main .registration p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.7px;
+}
+main .registration button {
+  padding: 20px 40px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background-color: #16c2b8;
+  border: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+main .registration p:last-of-type {
+  font-size: 12px;
+}
+main .registration p:last-of-type a {
+  color: #16c2b8;
+  text-decoration: none;
+}
+main .registration .registration-search {
+  display: none;
+}
+main .carousel {
+  position: relative;
+  flex-basis: 65%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+main .carousel-title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  padding: 20px 10px 15px 15px;
+  background-color: #317b6c;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+main .carousel-title p {
+  opacity: 0.42;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+main .carousel-title h3 {
+  font-family: MuseoSansCyrl-900, sans-serif;
+  opacity: 0.65;
+  font-size: 36px;
+  letter-spacing: 1.41px;
+}
+main .search {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: flex;
+  height: 90px;
+  width: 80%;
+  background-color: #ffffff;
+  box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  align-items: stretch;
+}
+main .search section {
+  display: flex;
+  flex-basis: 100%;
+}
+main .search section input {
+  width: 205px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 25px 0 25px 60px;
+  border: 0;
+  border-right: 1px solid #8ca0bf;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.47px;
+  color: #364459;
+  background: url(../img/group.svg) no-repeat center left 25px;
+}
+main .search section input:first-child {
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: url(../img/004-pin.svg) no-repeat center left 25px;
+}
+main .search section input:last-child {
+  padding: 25px 0 25px 60px;
+  background: url(../img/002-bed.svg) no-repeat center left 25px;
+}
+main .search button {
+  position: relative;
+  flex-basis: 90px;
+  border: 0;
+  background-color: #16c2b8;
+}
+main .search button:before {
+  content: "";
+  position: absolute;
+  left: calc( 50% - 20px );
+  width: 40px;
+  border-top: 2px solid #ffffff;
+}
+main .search button:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: translate(0, -50%) rotate(45deg);
+  -ms-transform: translate(0, -50%) rotate(45deg);
+  transform: translate(0, -50%) rotate(45deg);
+}
+
+footer {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "font73e5c73d4e80e6c080cd1bc5894cf3e8";
+  src: url("https://nomail.com.ua/files/eot/73e5c73d4e80e6c080cd1bc5894cf3e8.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/73e5c73d4e80e6c080cd1bc5894cf3e8.woff") format("woff"), url("https://nomail.com.ua/files/woff2/73e5c73d4e80e6c080cd1bc5894cf3e8.woff2") format("woff2");
+}
+@font-face {
+  font-family: "MuseoSansCyrl-900";
+  src: local("MuseoSansCyrl-900"), url("https://nomail.com.ua/files/woff/73e5c73d4e80e6c080cd1bc5894cf3e8.woff") format("woff");
+}
+@media screen and (max-width: 1366px) {
+  .main-header .main-navigation nav .site-navigation {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .main-header .main-navigation nav .site-navigation li:last-child {
+    margin: 0;
+  }
+  .main-header .main-navigation nav .site-navigation li {
+    margin: 0;
+  }
+  .main-header .main-navigation nav .site-navigation li:first-child {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .main-header .main-navigation {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+  }
+  main .search {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+  }
+  main .search section {
+    display: flex;
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
+  main {
+    height: 100%;
+  }
+  main .search {
+    height: 100%;
+    flex-direction: column;
+  }
+  main .search section {
+    flex-direction: column;
+  }
+  main .search section input {
+    width: 100%;
+    border: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  .main-header {
+    height: 60px;
+  }
+  .main-header .main-navigation {
+    display: none;
+  }
+  .main-header .mobile-navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #ebf3ff;
+  }
+  .main-header .mobile-navigation .mobile-header-logo {
+    flex-basis: 100%;
+    padding: 5px 20px;
+  }
+  .main-header .mobile-navigation button {
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    border: 0;
+    border-right: 1px solid #8ca0bf;
+    background-color: transparent;
+  }
+  .main-header .mobile-navigation button:first-of-type:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    border-bottom: 0.5px solid #0d3a7f;
+    border-top: 0.5px solid #0d3a7f;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .main-header .mobile-navigation button:first-of-type:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    border-top: 0.5px solid #0d3a7f;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .main-header .mobile-navigation button:last-of-type {
+    border-right: 0;
+    background-color: #0d3a7f;
+  }
+  .main-header .mobile-navigation button:last-of-type:before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 14px;
+    width: 7px;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #16c2b8;
+  }
+
+  main .registration {
+    padding: 100px 25px 0 15px;
+    text-align: center;
+    background-color: #ffffff;
+    background-image: url(../img/jasper-van-der-meij-97274-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  main .registration .registration-search {
+    display: flex;
+    flex-direction: column;
+  }
+  main .registration .registration-search > input {
+    height: 60px;
+    margin-bottom: 50px;
+    padding: 20px 0 20px 55px;
+    border: 0;
+    background: #ffffff url(../img/004-pin.svg) no-repeat center left 25px;
+  }
+  main .registration .registration-search section {
+    display: none;
+    flex-direction: column;
+  }
+  main .registration .registration-search section input {
+    height: 60px;
+    padding: 20px 0 20px 55px;
+    border: 0;
+    border-top: 1px solid #8ca0bf;
+    border-bottom: 1px solid #8ca0bf;
+    background: #ffffff url(../img/group.svg) no-repeat center left 25px;
+  }
+  main .registration .registration-search section input:last-of-type {
+    border: 0;
+    background: #ffffff url(../img/002-bed.svg) no-repeat center left 25px;
+  }
+  main .registration .registration-search button {
+    height: 60px;
+    margin-bottom: 0;
+  }
+  main .registration .registration-search button:before {
+    content: "";
+    position: absolute;
+    left: calc( 50% - 20px );
+    width: 40px;
+    border-top: 2px solid #ffffff;
+  }
+  main .registration .registration-search button:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    -webkit-transform: translate(0, -50%) rotate(45deg);
+    -ms-transform: translate(0, -50%) rotate(45deg);
+    transform: translate(0, -50%) rotate(45deg);
+  }
+  main .registration h1 {
+    font-size: 36px;
+  }
+  main .registration p:last-of-type {
+    margin-bottom: 110px;
+  }
+  main .carousel {
+    display: none;
+  }
+  main .search {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
